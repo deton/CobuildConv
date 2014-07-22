@@ -22,7 +22,7 @@ char	htmtxt[2048];
 char	title[256];	// 見出し
 char	variation[256];	// 変化形
 char	phonetic[256];	// 発音記号
-char	syntax[256];	// 構文
+char	syntax[512];	// 構文
 char	hyphen[256];	// 分綴
 char	note[256];	// 注釈
 char	subtitle[512];	// 小見出し
