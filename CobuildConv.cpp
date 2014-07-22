@@ -29,7 +29,7 @@ char	subtitle[512];	// 小見出し
 char	subno[512];	// 小見出し番号
 char	hinshi[512];	// 品詞
 char	explain[256];	// 小見出しの説明
-char	alternative[256];	// 特記事項
+char	alternative[512];	// 特記事項
 char	work[1024];
 
 int	DataNum;
