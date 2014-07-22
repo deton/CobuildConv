@@ -734,8 +734,12 @@ ConvHtml( FILE *fp, FILE *OutFp, int wbk )
 	char	Count;
 	char	Dummy1, Dummy2, Dummy3, Dummy4;
 	
+	int c = fgetc( fp );
+	if ( c == EOF ){
+		return 0;
+	}
 	/* 本文項目数 */
-	HonbunNum = fgetc( fp );
+	HonbunNum = c;
 	
 	/* 見出し項目フラグ */
 	Flg1 = fgetc( fp );
