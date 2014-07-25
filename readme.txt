@@ -19,8 +19,8 @@ GaijiMap.xml    ... 外字定義ファイル
 
 3. 動作確認環境
 
-OS : Windows XP
-コンパイラ：Borland C++ 5.0.1 / Borland C++ 5.5.1
+OS : Windows 7
+コンパイラ：Borland C++ 5.5.1 / Visual Studio 2010 Express
 CD-ROM : ISBN4-88996-203-4 付属のCD-ROM
 
 4. 使い方
@@ -59,7 +59,7 @@ EBStudioを起動し、添付のCobuild.ebsまたはWordbank.ebsを開きます。
 7. コンパイル
 
 ソースを変更してコンパイルし直す場合は、
-http://www.codegear.com/jp/downloads/free/cppbuilder
+http://www.embarcadero.com/jp/products/cbuilder/free-compiler
 で"Borland C++ 5.5.1"を入手することができます。
 そのままコンパイルすると、コンパイル時に警告が出ますが無視してください。
 
@@ -73,3 +73,18 @@ NOMAD氏の"CobuildConv.rb v1.32"を参考にしました。
 オープンソース扱いとします。
 自由に改変・配布してかまいません。
 
+10. 履歴
+
+2007/07/27 公開 by pcs
+2014/07/24 修正 by deton
+  * CobuildConvが異常終了して、最後の単語のzygoteの本文が欠ける問題を修正。
+  * 構文記述(syntax)の長さが256以上の単語に関し、記述が途中で切れる問題を修正。
+    紙の辞書で、本文最初の青く塗られた領域や青枠で囲われた領域に相当。
+    (about, bath, do^1, far, for, forward, have^3, in^1, into, of, off, on,
+    round^1, -'s, take^1, through, to^1, with)
+    例えば、farの場合、Further and furthest are dealt with in separate entries.
+    のareの前で切れる。
+  * Visual C++でビルドした場合、特記事項(alternative)の長さが256以上の単語に
+    関し、記述の最後の部分が本文最初に重複して出力される問題を修正。
+    紙の辞書で、本文最初の青く塗られた領域や青枠で囲われた領域に相当。
+    (come, put, -s)
