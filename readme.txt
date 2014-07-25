@@ -75,8 +75,8 @@ NOMAD氏の"CobuildConv.rb v1.32"を参考にしました。
 
 10. 履歴
 
-2007/07/27 公開 by pcs
-2014/07/24 修正 by deton
+2007/07/27 公開 by pcs http://www31.ocn.ne.jp/~h_ishida/CobuildConv/
+2014/07/26 修正 by deton
   * CobuildConvが異常終了して、最後の単語のzygoteの本文が欠ける問題を修正。
   * 構文記述(syntax)の長さが256以上の単語に関し、記述が途中で切れる問題を修正。
     紙の辞書で、本文最初の青く塗られた領域や青枠で囲われた領域に相当。
